@@ -1,0 +1,27 @@
+ {
+    "variable_name" : "xxx",
+    "user_name" : "userABC",
+    "password" : "xxx"
+    "orginization_id": "x",
+    "key_code": "x",
+    "secret_key_code": "x",
+    "clientId": "RR-Sean",
+  }
+
+
+
+
+import json
+
+with open('config-sean.json') as config_file:
+    data = json.load(config_file)
+
+
+organization_id = data['organization_id']
+key_code = data['key_code']
+secret_key_code = data['secret_key_code']
+
+print(organization_id)
+print(key_code)
+print(secret_key_code)
+
